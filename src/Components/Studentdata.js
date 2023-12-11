@@ -84,7 +84,7 @@ const Studentdata = () =>{
     
     
     return(
-        <div className="bg-[#120F1F] h-screen px-0 lg:px-20">
+        <div className="bg-[#120F1F] min-h-screen max-h-full px-0 lg:px-20">
             <ToastContainer />
             
 
