@@ -22,12 +22,12 @@ const Studentdata = () =>{
     useEffect(() => {
       fetchData(); // Fetch data initially
   
-      const intervalId = setInterval(() => {
-        fetchData(); // Fetch data every 1 second
-      }, 1000);
+    //   const intervalId = setInterval(() => {
+    //     fetchData(); // Fetch data every 1 second
+    //   }, 1000);
   
-      // Clear the interval on component unmount
-      return () => clearInterval(intervalId);
+    //   // Clear the interval on component unmount
+    //   return () => clearInterval(intervalId);
     }, []);
   
     const handleInputChange = (e) => {
