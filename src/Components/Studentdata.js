@@ -12,7 +12,7 @@ const Studentdata = () =>{
   
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/todo/get-todo");
+        const response = await axios.get("https://day-6-beckond.vercel.app/todo/get-todo");
         setData(response.data.Todo);
       } catch (error) {
         console.error(error);
@@ -55,7 +55,7 @@ const Studentdata = () =>{
         setFlag(valueing)
         console.log(valueing)
         try {
-            const response = await axios.delete(`http://localhost:5000/todo/delete-todo/${valueing}`);
+            const response = await axios.delete(`https://day-6-beckond.vercel.app/delete-todo/${valueing}`);
             setFlag(false)
             toast.error(response.data.message, {
                 position: "top-right",

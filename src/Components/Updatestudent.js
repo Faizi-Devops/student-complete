@@ -61,7 +61,7 @@ const Updatestudent = () =>{
       };
       setFlag(true)
       try {
-        const response = await axios.put(`http://localhost:5000/todo/update-todo/${data._id}`,a);
+        const response = await axios.put(`https://day-6-beckond.vercel.app/todo/update-todo/${data._id}`,a);
         setFlag(false)
         
         

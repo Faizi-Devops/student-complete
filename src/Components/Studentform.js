@@ -42,7 +42,7 @@ const Studentform = () => {
       setFlag(true)
       try {
         const response = await axios.post(
-          "http://localhost:5000/todo/add-todo",
+          "https://day-6-beckond.vercel.app/todo/add-todo",
           a
         );
         setFlag(false)
